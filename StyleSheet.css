@@ -1,0 +1,56 @@
+﻿body {
+}
+
+
+
+
+#logo img {
+    max-height: 10rem;
+}
+
+.menu li {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+/* Top Row */
+.toprow {
+    background: var(--grey);
+    padding: 10px;
+}
+
+    .toprow .row-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+.row-header {
+    display: grid;
+    padding: 10px 0 10px;
+    grid-template-columns: .8fr 2fr 1fr;
+    align-items: center;
+}
+
+    .row-header i {
+        margin-right: 10px;
+    }
+
+/* Navbar */
+
+.navbar.menu ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.navbar ul li a {
+    padding: 10px 30px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.menu {
+    padding: 20px;
+    justify-content: space-between;
+}
