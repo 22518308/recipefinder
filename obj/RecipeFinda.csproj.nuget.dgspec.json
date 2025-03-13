@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabrielwrycza\\Desktop\\RecipeFinda\\RecipeFinda\\RecipeFinda\\RecipeFinda.csproj": {}
+    "C:\\Users\\22518308\\source\\repos\\recipefinder\\RecipeFinda.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabrielwrycza\\Desktop\\RecipeFinda\\RecipeFinda\\RecipeFinda\\RecipeFinda.csproj": {
+    "C:\\Users\\22518308\\source\\repos\\recipefinder\\RecipeFinda.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabrielwrycza\\Desktop\\RecipeFinda\\RecipeFinda\\RecipeFinda\\RecipeFinda.csproj",
+        "projectUniqueName": "C:\\Users\\22518308\\source\\repos\\recipefinder\\RecipeFinda.csproj",
         "projectName": "RecipeFinda",
-        "projectPath": "C:\\Users\\gabrielwrycza\\Desktop\\RecipeFinda\\RecipeFinda\\RecipeFinda\\RecipeFinda.csproj",
-        "packagesPath": "C:\\Users\\gabrielwrycza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabrielwrycza\\Desktop\\RecipeFinda\\RecipeFinda\\RecipeFinda\\obj\\",
+        "projectPath": "C:\\Users\\22518308\\source\\repos\\recipefinder\\RecipeFinda.csproj",
+        "packagesPath": "C:\\Users\\22518308\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\22518308\\source\\repos\\recipefinder\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gabrielwrycza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\22518308\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,8 +44,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -69,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

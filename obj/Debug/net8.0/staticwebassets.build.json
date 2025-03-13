@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "TYGhNq7H7Rw6lzZb2nMpfkzPQy5TtRBrx2iWNO1Ca1c=",
+  "Hash": "WTqGDdiF1KZQFIyYwPt9CUwdJEbOWCRsslRaTDcRwJU=",
   "Source": "RecipeFinda",
   "BasePath": "_content/RecipeFinda",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }
