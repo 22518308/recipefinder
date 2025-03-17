@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Finda</title>
+    <link rel="icon" href="images/goombaLogo.png" type="image/png">
     <link rel="stylesheet" href="StyleSheet.css">
 </head>
 
@@ -34,23 +35,27 @@
                     </div>
                 </div>
 
-                <a href="signIn.html" class="btn">
-                    <i class="fas fa-user"></i> Sign in
-                </a>
+                <a href="#" class="btn" id="userSection"></a>
+
             </div>
         </div>
     </nav>
 
-    <form id="register" class="registerBox">
+    <form action="register.php" method="POST">
+
         <label for="username">Username</label>
-        <input type="text" name="username" id="userName" placeholder="exampleName"><br>
+        <input type="text" name="username" placeholder="exampleName"><br>
+
         <label for="email">Email</label>
-        <input type="text" name="email" id="emailAddress" placeholder="exampleName@email.com"><br>
+        <input type="text" name="email" placeholder="exampleName@email.com"><br>
+
         <label for="password">Password</label>
-        <input type="text" name="password" id="userPassword" placeholder="********"><br>
+        <input type="text" name="password" placeholder="********"><br>
+
         <label for="passwordConfirm">Please confirm Password</label>
-        <input type="text" name="passwordConfirm" id="userPasswordConfirm" placeholder="********"><br>
-        <button type="submit" id="submit">Register</button>
+        <input type="text" name="passwordConfirm" placeholder="********"><br>
+
+        <button type="submit" value="Register">Register</button>
     </form>
 
     <script src="JavaScript.js"></script>
