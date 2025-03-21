@@ -26,10 +26,10 @@
                         <div class="menu">
                             <ul>
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="yourFridge.html">Your Fridge</li></a>
-                                <li><a href="recipes.html">Recipes</li></a>
-                                <li><a href="about.html">About Us</li></a>
-                                <li><a href="savedRecipes.html">Bookmarked Recipes</li></a>
+                                <li><a href="yourFridge.html">Your Fridge</a></li>
+                                <li><a href="recipes.html">Recipes</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="savedRecipes.html">Bookmarked Recipes</a></li>
                             </ul>
                         </div>
                     </div>
@@ -41,24 +41,28 @@
         </div>
     </nav>
 
-    <form action="register.php" method="POST">
+    <form action="register.php" id="registerForm" method="POST">
 
         <label for="username">Username</label>
-        <input type="text" name="username" placeholder="exampleName"><br>
+        <input type="text" name="username" id="registerUsername" placeholder="exampleName"><br>
+        <span id="usernameError" style="color: red;"></span><br>
 
         <label for="email">Email</label>
-        <input type="text" name="email" placeholder="exampleName@email.com"><br>
+        <input type="text" name="email" id="registerEmail" placeholder="exampleName@email.com"><br>
+        <span id="emailError" style="color: red;"></span><br>
 
         <label for="password">Password</label>
-        <input type="text" name="password" placeholder="********"><br>
+        <input type="password" name="password" id="registerPassword" placeholder="********"><br>
+        <span id="passwordError" style="color: red;"></span><br>
 
         <label for="passwordConfirm">Please confirm Password</label>
-        <input type="text" name="passwordConfirm" placeholder="********"><br>
+        <input type="password" name="passwordConfirm" id="registerPasswordConfirm" placeholder="********"><br>
+        <span id="passwordConfirmError" style="color: red;"></span><br>
 
         <button type="submit" value="Register">Register</button>
     </form>
 
-    <script src="JavaScript.js"></script>
+    <script src="register.js"></script>
 </body>
 
 </html>

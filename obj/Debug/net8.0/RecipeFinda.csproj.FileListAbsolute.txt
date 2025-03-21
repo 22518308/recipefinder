@@ -53,3 +53,33 @@ C:\Users\22518308\source\repos\recipefinder\obj\Debug\net8.0\refint\RecipeFinda.
 C:\Users\22518308\source\repos\recipefinder\obj\Debug\net8.0\RecipeFinda.pdb
 C:\Users\22518308\source\repos\recipefinder\obj\Debug\net8.0\RecipeFinda.genruntimeconfig.cache
 C:\Users\22518308\source\repos\recipefinder\obj\Debug\net8.0\ref\RecipeFinda.dll
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\bin\Debug\net8.0\appsettings.Development.json
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\bin\Debug\net8.0\appsettings.json
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\bin\Debug\net8.0\RecipeFinda.staticwebassets.endpoints.json
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\bin\Debug\net8.0\RecipeFinda.exe
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\bin\Debug\net8.0\RecipeFinda.deps.json
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\bin\Debug\net8.0\RecipeFinda.runtimeconfig.json
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\bin\Debug\net8.0\RecipeFinda.dll
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\bin\Debug\net8.0\RecipeFinda.pdb
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\RecipeFinda.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\RecipeFinda.AssemblyInfoInputs.cache
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\RecipeFinda.AssemblyInfo.cs
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\RecipeFinda.csproj.CoreCompileInputs.cache
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\RecipeFinda.MvcApplicationPartsAssemblyInfo.cache
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\RecipeFinda.sourcelink.json
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\scopedcss\bundle\RecipeFinda.styles.css
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\staticwebassets.build.json
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\staticwebassets.development.json
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\staticwebassets\msbuild.RecipeFinda.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\staticwebassets\msbuild.RecipeFinda.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\staticwebassets\msbuild.build.RecipeFinda.props
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.RecipeFinda.props
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.RecipeFinda.props
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\RecipeFinda.dll
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\refint\RecipeFinda.dll
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\RecipeFinda.pdb
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\RecipeFinda.genruntimeconfig.cache
+D:\Program Files\XAMPP\htdocs\Projects\Recipe Finda\obj\Debug\net8.0\ref\RecipeFinda.dll
