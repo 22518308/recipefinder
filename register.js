@@ -4,7 +4,7 @@ console.log("hi");
 
 async function checkLoginStatus() {
     try {
-        const response = await fetch("fetchUser.php"); // Fetch PHP session data
+        const response = await fetch("fetchUser.php"); 
         const data = await response.json();
         console.log(data.isLoggedIn);
         if (data.isLoggedIn) {
