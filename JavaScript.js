@@ -20,5 +20,29 @@ async function checkLoginStatus() {
     }
 }
 
+async function loadRecipeList() {
+    try {
+        const response = await fetch("fetchAllRecipes.php");
+        const recipes = await response.json();
+
+        const listContainer = document.getElementById("recipeList");
+        listContainer.innerHTML = ""; // Clear previous content
+
+        recipes.forEach(recipe => {
+            const link = document.createElement("a");
+            link.href = `recipeInfo.html?id=${recipe.id}`;
+            link.innerText = recipe.recipe_name;
+            link.style.display = "block"; // new line for each
+
+            listContainer.appendChild(link);
+        });
+
+    } catch (error) {
+        console.error("Error loading recipe list:", error);
+    }
+}
+
 
 checkLoginStatus();
+
+loadRecipeList()

@@ -20,14 +20,28 @@ async function checkLoginStatus() {
     }
 }
 
+function getQueryParam(name) {
+    const params = new URLSearchParams(window.location.search);
+    return params.get(name);
+}
 
-
-async function getRecipe() {
+async function getRecipe(recipeId) {
     try {
-        const response = await fetch("fetchRecipe.php");
+        const response = await fetch("fetchRecipe.php?id=" + recipeId);
         const data = await response.json();
-        console.log(data);
 
+        const { recipe_name: recipeName, image_url: recipeImageURL, description : recipeDesc, instructions : recipeInst, prep_time : recipePrepT, cook_time : recipeCookT, servings : recipeServ} = data;
+
+        const currentPath = window.location.pathname;
+        const currentDir = currentPath.substring(0, currentPath.lastIndexOf('/')); // Gets current directory
+
+        document.getElementById("recipeName").innerText = recipeName;
+        document.getElementById("recipeImage").src = currentDir + "/images/recipeImages/" + recipeImageURL;
+        document.getElementById("desc").innerText = recipeDesc;
+        document.getElementById("instructions").innerText = recipeInst;
+        document.getElementById("prepTime").innerText = recipePrepT;
+        document.getElementById("cookTime").innerText = recipeCookT;
+        document.getElementById("servings").innerText = recipeServ;
 
     } catch (error) {
         console.error("Error fetching recipe data:", error);
@@ -35,6 +49,12 @@ async function getRecipe() {
 }
 
 
+
 checkLoginStatus();
 
-getRecipe();
+window.addEventListener("DOMContentLoaded", () => {
+    const recipeId = getQueryParam("id");
+
+    getRecipe(recipeId);
+});
+
