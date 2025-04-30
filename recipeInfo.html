@@ -21,42 +21,41 @@
                     </a>
                 </div>
 
-                <div class="navbar">
-                    <div class="container">
-                        <div class="menu">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="yourFridge.html">Your Fridge</li></a>
-                                <li><a href="recipes.html">Recipes</li></a>
-                                <li><a href="about.html">About Us</li></a>
-                                <li><a href="savedRecipes.html">Bookmarked Recipes</li></a>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <nav class="navbar menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="yourFridge.html">Your Fridge</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="savedRecipes.html">Bookmarked Recipes</a></li>
+                    </ul>
+                </nav>
 
-                <a href="#" class="btn" id="userSection"></a>
+                <a href="#" class="btn" id="userSection">Sign In</a>
 
             </div>
         </div>
     </nav>
 
-    <div class="recipe-info"> 
-        <h2 id="recipeName">Placeholder text: The image and text values get changed automatically when the database is on. Feel free to change the image/text below for CSS testing. Styling will apply the same way to actual recipe info as it will to placeholders.</h2>
-        <img src="" alt="recipe image" id="recipeImage" width="400" height="225">
+    <div class="recipe-info">
+        <h2 id="recipeName">Placeholder text...</h2>
+
+        <div class="recipe-top">
+            <img src="images/recipeImages/chicken_curry.jpg" alt="Recipe image" id="recipeImage">
+
+            <div class="recipe-meta">
+                <p id="prepTime">Prep time: 15 mins</p>
+                <p id="cookTime">Cook time: 25 mins</p>
+                <p id="servings">Servings: 2</p>
+            </div>
+        </div>
+
         <div class="recipe-text">
             <p id="desc">Description text</p>
             <p id="instructions">Instructions text</p>
-            <p id="prepTime">Prep time value</p>
-            <p id="cookTime">Cook time value</p>
-            <p id="servings">Serving amount value</p>
-
-            <h2>Ingredient List</h2>
-            <div id="ingredientList">
-                <p id="servings">Example ingredient</p>
-            </div>
         </div>
     </div>
+
 
     <script src="recipe.js"></script>
 </body>

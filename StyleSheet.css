@@ -6,6 +6,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     background-color: #f9f9f9;
+    overflow-x: hidden;
 }
 
 /* Logo */
@@ -38,18 +39,18 @@ body {
 
 /* Top Row */
 .toprow {
-    background: #e0e0e0;
-    padding: 10px 20px;
-    font-size: 0.9rem;
-    color: #555;
+    width: 100%;
+    background-color: #e0e0e0;
 }
 
     .toprow .row-header {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
 /* Row Header */
 .row-header {
     display: grid;
@@ -174,8 +175,93 @@ body {
         text-decoration: underline;
     }
 
+
 .footerP3 {
     text-align: right;
     color: #777;
     font-size: 0.9rem;
+}
+
+.footerP1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: none;
+    margin: 0;
+}
+
+/*For individual recipe page*/
+/* Recipe Info Page Container */
+.recipe-info {
+    background-color: #fff;
+    padding: 40px 30px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+}
+
+    /* Recipe Name Heading */
+    .recipe-info h2#recipeName {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+/* Recipe Image */
+#recipeImage {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Recipe Text Info */
+.recipe-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+    .recipe-text p {
+        margin-bottom: 12px;
+        padding-left: 5px;
+        border-left: 4px solid #4CAF50;
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+.recipe-top {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.recipe-meta {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+    .recipe-meta p {
+        background-color: #f4f4f4;
+        padding: 12px 16px;
+        border-left: 5px solid #4CAF50;
+        border-radius: 6px;
+        font-weight: 500;
+        color: #444;
+    }
+
+footer {
+    width: 100%;
+    background-color: #e0e0e0;
+    padding: 40px 20px;
 }
