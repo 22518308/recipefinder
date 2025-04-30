@@ -48,13 +48,35 @@ async function getRecipe(recipeId) {
     }
 }
 
+async function getRecipeIngredients(recipeId) {
+    try {
+        const response = await fetch("fetchRecipeIngredients.php?id=" + recipeId);
+        const ingredients = await response.json();
 
+        const listContainer = document.getElementById("ingredientList");
+        listContainer.innerHTML = ""; // Clear previous content
+
+        ingredients.forEach(item => {
+            const link = document.createElement("a");
+            link.innerText = `${item.quantity} ${item.ingredient}`;
+            link.style.display = "block"; // new line for each
+            listContainer.appendChild(link);
+        });
+
+    } catch (error) {
+        console.error("Error loading recipe list:", error);
+    }
+}
 
 checkLoginStatus();
 
 window.addEventListener("DOMContentLoaded", () => {
     const recipeId = getQueryParam("id");
-
-    getRecipe(recipeId);
+    if (recipeId != null) {
+        getRecipe(recipeId);
+        getRecipeIngredients(recipeId) 
+    } else {
+        console.warn("No recipe ID found in the URL");
+    }
 });
 
