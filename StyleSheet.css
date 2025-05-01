@@ -40,7 +40,7 @@ body {
 /* Top Row */
 .toprow {
     width: 100%;
-    background-color: #e0e0e0;
+    background-color: #007f82;
 }
 
     .toprow .row-header {
@@ -65,8 +65,7 @@ body {
 
 /* Navigation Menu */
 .navbar.menu {
-    background-color: #ffffff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: ;
     padding: 10px 20px;
 }
 
@@ -83,14 +82,14 @@ body {
     padding: 10px 20px;
     display: block;
     font-weight: 600;
-    color: #333;
+    color: #000000;
     text-decoration: none;
     border-radius: 6px;
     transition: background 0.3s ease, color 0.3s ease;
 }
 
     .navbar ul li a:hover {
-        background-color: #333;
+        background-color: #004b4d;
         color: #fff;
     }
 
@@ -230,7 +229,7 @@ body {
     .recipe-text p {
         margin-bottom: 12px;
         padding-left: 5px;
-        border-left: 4px solid #4CAF50;
+        border-left: 4px solid #004b4d;
         background-color: #f4f4f4;
         padding: 10px;
         border-radius: 6px;
