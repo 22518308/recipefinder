@@ -56,6 +56,23 @@ async function renderRecipeList(recipes) {
         console.error("Error rendering recipe list:", error);
     }
 }
+function handleSearch(query) {
+    const filtered = allRecipes.filter(recipe =>
+        recipe.recipe_name.toLowerCase().includes(query.toLowerCase())
+    );
+    renderRecipeList(filtered);
+}
+
+document.getElementById("searchBox").addEventListener("input", (e) => {
+    handleSearch(e.target.value);
+});
+
+document.getElementById("searchBox").addEventListener("blur", () => {
+    setTimeout(() => {
+        document.getElementById("recipeList").innerHTML = "";
+    }, 140); // Delay long enough for a click to register
+});
 
 checkLoginStatus();
 
+loadRecipeList()
