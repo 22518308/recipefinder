@@ -57,7 +57,7 @@ async function getRecipeIngredients(recipeId) {
         listContainer.innerHTML = ""; // Clear previous content
 
         ingredients.forEach(item => {
-            const link = document.createElement("a");
+            const link = document.createElement("p");
             link.innerText = `${item.quantity} ${item.ingredient}`;
             link.style.display = "block"; // new line for each
             listContainer.appendChild(link);

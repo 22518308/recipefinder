@@ -261,6 +261,12 @@ body {
         font-size: 0.95rem;
     }
 
+.recipe-card-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Keep text color from changing */
+    display: block; /* Ensure the whole card is clickable */
+}
+
 footer {
     width: 100%;
     background-color: #e0e0e0;
