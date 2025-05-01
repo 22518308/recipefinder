@@ -39,9 +39,9 @@ async function getRecipe(recipeId) {
         document.getElementById("recipeImage").src = currentDir + "/images/recipeImages/" + recipeImageURL;
         document.getElementById("desc").innerText = recipeDesc;
         document.getElementById("instructions").innerText = recipeInst;
-        document.getElementById("prepTime").innerText = recipePrepT;
-        document.getElementById("cookTime").innerText = recipeCookT;
-        document.getElementById("servings").innerText = recipeServ;
+        document.getElementById("prepTime").innerText = "🕗 Prep Time: " + recipePrepT;
+        document.getElementById("cookTime").innerText = "🕗 Cook Time: " + recipeCookT;
+        document.getElementById("servings").innerText = "🍴 Servings: " + recipeServ;
 
     } catch (error) {
         console.error("Error fetching recipe data:", error);
