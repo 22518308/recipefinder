@@ -20,12 +20,26 @@ async function checkLoginStatus() {
     }
 }
 
+let allRecipes = []; // global variable to hold all fetched recipes
 
+async function loadRecipeList() {
+    try {
+        const response = await fetch("fetchAllRecipes.php");
+        allRecipes = await response.json();
+
+    } catch (error) {
+        console.error("Error loading recipe list:", error);
+        allRecipes = [
+            { id: 1, recipe_name: "Spaghetti Bolognese" },
+            { id: 2, recipe_name: "Chocolate Cake" },
+            { id: 3, recipe_name: "Caesar Salad" }
+        ];
+    }
+}
 
 async function renderRecipeList(recipes) {
     try {
-        const response = await fetch("fetchAllRecipes.php");
-        recipes = await response.json();
+
         const listContainer = document.getElementById("recipeList");
         listContainer.innerHTML = ""; // Clear previous content
 
@@ -42,7 +56,21 @@ async function renderRecipeList(recipes) {
         console.error("Error rendering recipe list:", error);
     }
 }
+function handleSearch(query) {
+    const filtered = allRecipes.filter(recipe =>
+        recipe.recipe_name.toLowerCase().includes(query.toLowerCase())
+    );
+    renderRecipeList(filtered);
+}
 
-checkLoginStatus();
+document.getElementById("searchBox").addEventListener("input", (e) => {
+    handleSearch(e.target.value);
+});
 
-renderRecipeList()
+async function initPage() {
+    checkLoginStatus();
+    await loadRecipeList();              // wait for recipes to load
+    renderRecipeList(allRecipes);    // now render them
+}
+
+initPage()

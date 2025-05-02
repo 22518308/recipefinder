@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bkarp\\source\\repos\\recipefinder4\\RecipeFinda.csproj": {}
+    "D:\\Program Files\\XAMPP\\htdocs\\Projects\\Recipe Finda\\RecipeFinda.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bkarp\\source\\repos\\recipefinder4\\RecipeFinda.csproj": {
+    "D:\\Program Files\\XAMPP\\htdocs\\Projects\\Recipe Finda\\RecipeFinda.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bkarp\\source\\repos\\recipefinder4\\RecipeFinda.csproj",
+        "projectUniqueName": "D:\\Program Files\\XAMPP\\htdocs\\Projects\\Recipe Finda\\RecipeFinda.csproj",
         "projectName": "RecipeFinda",
-        "projectPath": "C:\\Users\\bkarp\\source\\repos\\recipefinder4\\RecipeFinda.csproj",
-        "packagesPath": "C:\\Users\\bkarp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bkarp\\source\\repos\\recipefinder4\\obj\\",
+        "projectPath": "D:\\Program Files\\XAMPP\\htdocs\\Projects\\Recipe Finda\\RecipeFinda.csproj",
+        "packagesPath": "C:\\Users\\gabrielwrycza\\.nuget\\packages\\",
+        "outputPath": "D:\\Program Files\\XAMPP\\htdocs\\Projects\\Recipe Finda\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "E:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\bkarp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gabrielwrycza\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -68,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
