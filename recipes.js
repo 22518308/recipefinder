@@ -87,15 +87,35 @@ function handleSearch(query) {
     }
 
     // Create a plain text list of matching recipes
-    const list = document.createElement("ul");
-    filtered.forEach(recipe => {
-        const item = document.createElement("li");
-        const link = document.createElement("a");
-        link.href = `recipeInfo.html?id=${recipe.id}`;
-        link.innerText = recipe.recipe_name;
-        item.appendChild(link);
-        list.appendChild(item);
-    });
+    const resultsContainer = document.getElementById("searchResultsList");
+resultsContainer.innerHTML = ""; // Clear previous search results
+
+if (!query.trim()) return; // Skip if empty
+if (filtered.length === 0) {
+    resultsContainer.innerText = "No matching recipes.";
+    return;
+}
+
+const resultGrid = document.createElement("div");
+resultGrid.className = "search-results-grid";
+
+filtered.forEach(recipe => {
+    const card = document.createElement("a");
+    card.href = `recipeInfo.html?id=${recipe.id}`;
+    card.className = "search-result-card";
+
+    const title = document.createElement("h4");
+    title.innerText = recipe.recipe_name;
+
+    const desc = document.createElement("p");
+    desc.innerText = recipe.description || "Click for more";
+
+    card.appendChild(title);
+    card.appendChild(desc);
+    resultGrid.appendChild(card);
+});
+
+resultsContainer.appendChild(resultGrid);
 
     searchResultsContainer.appendChild(list);
 }

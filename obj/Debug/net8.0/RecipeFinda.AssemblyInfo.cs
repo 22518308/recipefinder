@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecipeFinda")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03596c97bb332ad7511e96e27270f3a9420df30e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef37132b95fee37017fe5b718b13b0f1c57aa58f")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecipeFinda")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecipeFinda")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
