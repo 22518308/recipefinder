@@ -7,6 +7,8 @@
     <title>Recipe Finda</title>
     <link rel="icon" href="images/rfLogo1.png" type="image/png">
     <link rel="stylesheet" href="StyleSheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -43,8 +45,10 @@
 
     <!-- Page Content -->
     <main>
-        <h1>Home Page</h1>
-        <p>Welcome to RecipeFinda We are a website made by students for students, our goal is to help students stay healthy with quick and easy recipes</p>
+        
+        <h1>Welcome to RecipeFinda!</h1>
+        <h2>By Students, For Students.</h2>
+        <p>Tired of instant noodles and overpriced takeout? So were we. RecipeFinda is your go-to spot for quick, affordable, and student-tested recipes. Whether you're a kitchen newbie or a dorm-room chef, we've got you covered with meals that are easy on time, money, and stress.</p>
 
         <h1>Quick search</h1>
         <input type="text" id="searchBox" placeholder="Search recipes...">
@@ -58,24 +62,24 @@
         <section class="popular-recipes">
             <div class="recipe-card">
                 <a href="recipeInfo.html?id=9" class="recipe-card-link">
-                <img src="images/recipeImages/beef_tacos.jpg" alt="Beef Tacos">
-                <h3>Beef Tacos</h3>
-                <p>Delicious and spicy beef tacos with fresh toppings and soft tortillas.</p>
-                    </a>
+                    <img src="images/recipeImages/beef_tacos.jpg" alt="Beef Tacos">
+                    <h3>Beef Tacos</h3>
+                    <p>Delicious and spicy beef tacos with fresh toppings and soft tortillas.</p>
+                </a>
             </div>
             <div class="recipe-card">
                 <a href="recipeInfo.html?id=8" class="recipe-card-link">
-                <img src="images/recipeImages/tomato_soup.jpg" alt="Tomato Soup">
-                <h3>Tomato Soup</h3>
-                <p>Classic creamy tomato soup, perfect with a touch of basil and croutons.</p>
-                    </a>
+                    <img src="images/recipeImages/tomato_soup.jpg" alt="Tomato Soup">
+                    <h3>Tomato Soup</h3>
+                    <p>Classic creamy tomato soup, perfect with a touch of basil and croutons.</p>
+                </a>
             </div>
             <div class="recipe-card">
                 <a href="recipeInfo.html?id=10" class="recipe-card-link">
-                <img src="images/recipeImages/grilled_cheese.jpg" alt="Grilled Cheese">
-                <h3>Grilled Cheese</h3>
-                <p>Golden crispy grilled cheese sandwich with gooey melted cheddar inside.</p>
-                    </a>
+                    <img src="images/recipeImages/grilled_cheese.jpg" alt="Grilled Cheese">
+                    <h3>Grilled Cheese</h3>
+                    <p>Golden crispy grilled cheese sandwich with gooey melted cheddar inside.</p>
+                </a>
             </div>
         </section>
 
@@ -142,7 +146,15 @@
         </div>
 
         <div class="footerP3">
-            <h3>Follow us:</h3>
+            <div class="follow-us-container">
+                <h3>Follow us:</h3>
+                <div class="social-buttons">
+                    <a href="https://facebook.com" target="_blank" class="social fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="social ig"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="social tw"><i class="fab fa-twitter"></i></a>
+                    <a href="https://pinterest.com" target="_blank" class="social pin"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
         </div>
 
         <div class="footerP4">
@@ -151,6 +163,16 @@
     </footer>
 
     <script src="indexJavaScript.js"></script>
+
+    
+    <div id="header-placeholder"></div>
+
+    <!-- Main content here -->
+
+    <div id="footer-placeholder"></div>
+
+    <script src="includeHeaderFooter.js"></script>
+    
 </body>
 
 </html>
