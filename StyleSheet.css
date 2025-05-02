@@ -542,3 +542,98 @@ footer {
     .register-form button:hover {
         background-color: #218838;
     }
+.ingredient-search-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.input-search {
+    width: 60%;
+    padding: 14px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: inline-block;
+    text-align: left;
+}
+
+.btn-search {
+    margin-top: 30px;
+    padding: 14px 28px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-search:hover {
+        background-color: #218838;
+    }
+
+.ingredient-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.ingredient-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+    font-size: 1.1rem;
+}
+
+    .ingredient-card:hover {
+        background-color: #e6f4ea;
+    }
+
+/* Larger circular green checkbox */
+.ingredient-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 28px;
+    height: 28px;
+    border: 3px solid #ccc;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+    .ingredient-checkbox:checked {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+
+        .ingredient-checkbox:checked::after {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 8px;
+            width: 6px;
+            height: 12px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg);
+        }
