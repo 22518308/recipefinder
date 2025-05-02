@@ -38,23 +38,33 @@ async function loadRecipeList() {
 }
 
 async function renderRecipeList(recipes) {
-    try {
+    const listContainer = document.getElementById("recipeList");
+    listContainer.innerHTML = "";  // clear previous content
 
-        const listContainer = document.getElementById("recipeList");
-        listContainer.innerHTML = ""; // Clear previous content
-
-        recipes.forEach(recipe => {
-            const link = document.createElement("a");
-            link.href = `recipeInfo.html?id=${recipe.id}`;
-            link.innerText = recipe.recipe_name;
-            link.style.display = "block"; // new line for each
-
-            listContainer.appendChild(link);
-        });
-
-    } catch (error) {
-        console.error("Error rendering recipe list:", error);
+    if (recipes.length === 0) {
+        listContainer.innerHTML = "<p>No matches found.</p>";
+        return;
     }
+
+    const currentPath = window.location.pathname;
+    const currentDir = currentPath.substring(0, currentPath.lastIndexOf('/')); // Gets current directory
+
+    recipes.forEach(recipe => {
+        // Create the card wrapper
+        const card = document.createElement("div");
+        card.className = "recipe-card";
+
+        // Fill with your card markup
+        card.innerHTML = `
+            <a href="recipeInfo.html?id=${recipe.id}" class="recipe-card-link">
+                <img src="${currentDir + "/images/recipeImages/" + recipe.image_url || 'images/default.jpg'}" alt="${recipe.recipe_name}">
+                    <h3>${recipe.recipe_name}</h3>
+                    <p>${recipe.description || ''}</p>
+            </a>
+            `;
+
+        listContainer.appendChild(card);
+    });
 }
 function handleSearch(query) {
     const filtered = allRecipes.filter(recipe =>
