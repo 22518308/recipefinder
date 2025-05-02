@@ -1,4 +1,4 @@
-﻿const userSection = document.getElementById("userSection")
+﻿const userSection = document.getElementById("userSection");
 
 console.log("hi");
 
@@ -12,7 +12,7 @@ async function checkLoginStatus() {
             userSection.innerText = data.username;
         } else {
             userSection.href = "signIn.html";
-            userSection.innerText = "Sign In"
+            userSection.innerText = "Sign In";
         }
 
     } catch (error) {
@@ -39,38 +39,76 @@ async function loadRecipeList() {
 
 async function renderRecipeList(recipes) {
     try {
-
         const listContainer = document.getElementById("recipeList");
         listContainer.innerHTML = ""; // Clear previous content
 
-        recipes.forEach(recipe => {
-            const link = document.createElement("a");
-            link.href = `recipeInfo.html?id=${recipe.id}`;
-            link.innerText = recipe.recipe_name;
-            link.style.display = "block"; // new line for each
+        const currentPath = window.location.pathname;
+        const currentDir = currentPath.substring(0, currentPath.lastIndexOf('/')); // Gets current directory
 
-            listContainer.appendChild(link);
+        recipes.forEach(recipe => {
+            const card = document.createElement("div");
+            card.className = "recipe-card";
+
+            const imagePath = recipe.image_url
+                ? `${currentDir}/images/recipeImages/${recipe.image_url}`
+                : `${currentDir}/images/default.jpg`;
+
+            card.innerHTML = `
+                <a href="recipeInfo.html?id=${recipe.id}" class="recipe-card-link">
+                    <img src="${imagePath}" alt="${recipe.recipe_name}">
+                    <h3>${recipe.recipe_name}</h3>
+                    <p>${recipe.description || ''}</p>
+                </a>
+            `;
+
+            listContainer.appendChild(card);
         });
 
     } catch (error) {
         console.error("Error rendering recipe list:", error);
     }
 }
+
+// Handle search and display results
 function handleSearch(query) {
     const filtered = allRecipes.filter(recipe =>
         recipe.recipe_name.toLowerCase().includes(query.toLowerCase())
     );
-    renderRecipeList(filtered);
+
+    // Update plain text search results list without affecting recipe cards
+    const searchResultsContainer = document.getElementById("searchResultsList");
+    searchResultsContainer.innerHTML = ""; // Clear previous search results
+
+    if (!query.trim()) return; // Skip if the search query is empty
+
+    if (filtered.length === 0) {
+        searchResultsContainer.innerText = "No matching recipes.";
+        return;
+    }
+
+    // Create a plain text list of matching recipes
+    const list = document.createElement("ul");
+    filtered.forEach(recipe => {
+        const item = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = `recipeInfo.html?id=${recipe.id}`;
+        link.innerText = recipe.recipe_name;
+        item.appendChild(link);
+        list.appendChild(item);
+    });
+
+    searchResultsContainer.appendChild(list);
 }
 
+// Listen to input event on search box
 document.getElementById("searchBox").addEventListener("input", (e) => {
-    handleSearch(e.target.value);
+    handleSearch(e.target.value);  // Update only the search results list
 });
 
 async function initPage() {
     checkLoginStatus();
-    await loadRecipeList();              // wait for recipes to load
-    renderRecipeList(allRecipes);    // now render them
+    await loadRecipeList(); // Wait for recipes to load
+    renderRecipeList(allRecipes); // Render all recipes initially
 }
 
-initPage()
+initPage();
