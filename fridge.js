@@ -109,6 +109,15 @@ document.getElementById("searchBox").addEventListener("input", (e) => {
     handleSearch(e.target.value);
 });
 
+document.getElementById("submitIngredients").addEventListener("click", () => {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    const selectedIds = Array.from(checkboxes).map(cb => cb.value);
+
+    // Pass selected ingredient IDs to the next page via URL (as a comma-separated list)
+    const queryString = new URLSearchParams({ ingredients: selectedIds.join(',') }).toString();
+    window.location.href = `searchResults.html?${queryString}`;
+});
+
 async function initPage() {
     checkLoginStatus();
     await loadIngredientList();              // wait for ingredients to load
