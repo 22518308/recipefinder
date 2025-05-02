@@ -42,26 +42,31 @@
 
     </nav>
 
-    <form action="register.php" id="registerForm" method="POST">
+    <div class="register-container">
+        <h1>Create an Account</h1>
+        <p class="subtitle">Sign up to start saving recipes and more</p>
 
-        <label for="username">Username</label>
-        <input type="text" name="username" id="registerUsername" placeholder="exampleName"><br>
-        <span id="usernameError" style="color: red;"></span><br>
+        <form action="register.php" id="registerForm" method="POST" class="register-form">
 
-        <label for="email">Email</label>
-        <input type="text" name="email" id="registerEmail" placeholder="exampleName@email.com"><br>
-        <span id="emailError" style="color: red;"></span><br>
+            <label for="registerUsername">Username</label>
+            <input type="text" name="username" id="registerUsername" placeholder="exampleName" required>
+            <span id="usernameError" class="error-message"></span>
 
-        <label for="password">Password</label>
-        <input type="password" name="password" id="registerPassword" placeholder="********"><br>
-        <span id="passwordError" style="color: red;"></span><br>
+            <label for="registerEmail">Email</label>
+            <input type="email" name="email" id="registerEmail" placeholder="example@email.com" required>
+            <span id="emailError" class="error-message"></span>
 
-        <label for="passwordConfirm">Please confirm Password</label>
-        <input type="password" name="passwordConfirm" id="registerPasswordConfirm" placeholder="********"><br>
-        <span id="passwordConfirmError" style="color: red;"></span><br>
+            <label for="registerPassword">Password</label>
+            <input type="password" name="password" id="registerPassword" placeholder="********" required>
+            <span id="passwordError" class="error-message"></span>
 
-        <button type="submit" value="Register">Register</button>
-    </form>
+            <label for="registerPasswordConfirm">Confirm Password</label>
+            <input type="password" name="passwordConfirm" id="registerPasswordConfirm" placeholder="********" required>
+            <span id="passwordConfirmError" class="error-message"></span>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
     <footer>
         <div class="footerP1">
             <div>
