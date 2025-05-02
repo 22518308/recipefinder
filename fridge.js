@@ -35,6 +35,12 @@ async function loadIngredientList() {
         allIngredients = [
             { id: 1, name: "Flour" },
             { id: 2, name: "Sugar" },
+            { id: 3, name: "Eggs" },
+            { id: 1, name: "Flour" },
+            { id: 2, name: "Sugar" },
+            { id: 3, name: "Eggs" },
+            { id: 1, name: "Flour" },
+            { id: 2, name: "Sugar" },
             { id: 3, name: "Eggs" }
         ];
     }
