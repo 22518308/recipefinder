@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bkarp\\source\\repos\\recipefinder3\\RecipeFinda.csproj",
+      "projectUniqueName": "C:\\Users\\bkarp\\source\\repos\\recipefinder4\\RecipeFinda.csproj",
       "projectName": "RecipeFinda",
-      "projectPath": "C:\\Users\\bkarp\\source\\repos\\recipefinder3\\RecipeFinda.csproj",
+      "projectPath": "C:\\Users\\bkarp\\source\\repos\\recipefinder4\\RecipeFinda.csproj",
       "packagesPath": "C:\\Users\\bkarp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bkarp\\source\\repos\\recipefinder3\\obj\\",
+      "outputPath": "C:\\Users\\bkarp\\source\\repos\\recipefinder4\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
